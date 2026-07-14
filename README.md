@@ -40,14 +40,11 @@ Rough plan, roughly in the order it'll get built.
 - **Invites**: when someone new joins with the code, the group leader sees a pending request and has to **accept** them before they show up on the schedule.
 
 ### Scheduling improvements
-- Custom **labels for working days** instead of the fixed Mon–Sun set (e.g. shift names, rotating schedules).
-- A dedicated **"fully busy"** mode per working day (already partially there — needs to be clearer in the UI).
-- Since most people's work schedule repeats weekly and rarely changes, **auto-apply the weekly pattern across the whole month** instead of asking people to configure it day by day.
-- **Manual per-hour overrides** on top of the auto-generated month, for the weeks that don't match the usual pattern.
+- Custom **labels ** instead of the fixed work days                                  
 - **Hover tooltips** on the hourly grid — hovering a "busy" cell should say whether it was auto-set from the weekly pattern or manually entered.
 
 ### Month view
-- Small **percentage-busy indicator** on each day in the month view (e.g. "3/6 people free"), instead of a single "busy" dot.
+- Small **percentage-busy indicator** on each day in the month view Chance of % to schedule day 
 
 ### Notifications
 - When two or more people agree on a plan for a slot, notify everyone in the group:
@@ -55,16 +52,14 @@ Rough plan, roughly in the order it'll get built.
 
 ### Out of scope for now, but interesting
 - **[Hard]** Let someone **upload/scan a photo of their printed work schedule** and have it parsed automatically into working hours. Big lift (OCR + schedule parsing), parked for later.
+### Server 
+Self host server  
 
+ 
 ---
 
 ## Tech stack
 
-This README assumes a standard **Vite + React** setup, since that's the lightest way to run the current `App.jsx`/`App.css` pair. If you're actually on Create React App, Next.js, or something else, swap the commands below for your framework's equivalent — the component itself doesn't care.
-
-- React (function components + hooks, no external state library yet)
-- Plain CSS (`App.css`, custom properties for theming)
-- `localStorage` for persistence (temporary, until the backend lands)
 
 ---
 
